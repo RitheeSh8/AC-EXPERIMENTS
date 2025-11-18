@@ -22,3 +22,58 @@ G vs R (curved increasing relation)
 Pr vs R (curved decreasing relation)
 Execute the program to display the three subplots.
 
+## ALGORITHM
+1.Initialize constants: λ (wavelength) = 0.03 m σ (radar cross section) = 1 m²
+2.Vary each parameter while keeping the others constant: Pt: 0.1 → 10 Gt: 1 → 50 Pm: 1e⁻¹⁵ → 1e⁻¹⁰
+3.Compute maximum range using: R_max = ((Pt * Gt² * λ² * σ) / ((4π)³ * Pm))¼
+4.Plot the following: Pt vs Rmax Gt vs Rmax Pm vs Rmax
+
+## PROGRAM
+```
+G=40;
+eta=0.5;
+Ae=1;
+Smin=1e-10;
+Ppeak=5000:50:9000;
+Rmax_values = zeros(1, length(Ppeak));
+for i = 1:length(Ppeak)
+    Rmax_values(i) = ((Ppeak(i) * G * eta * Ae) / (16 * %pi^2 * Smin))^(1/4);
+end
+clf;
+subplot(3,1,1);
+plot(Ppeak, Rmax_values, 'b');
+xlabel('P_{peak}');
+ylabel('R_{max}');
+clear "G" "Rmax_values" "Ppeak";
+Ppeak = 5000;
+G = 50:2:100;
+Rmax_values = zeros(1, length(G));
+for i = 1:length(G)
+    Rmax_values(i) = ((Ppeak * G(i) * eta * Ae) / (16 * %pi^2 * Smin))^(1/4);
+end
+subplot(3,1,2);
+plot(G, Rmax_values, 'r');
+xlabel("G");
+ylabel("R_{max}");
+clear "G" "Rmax_values" "Smin";
+G = 40;
+Smin_values = logspace(-12,-9,50);
+Rmax_values = zeros(1, length(Smin_values));
+for i = 1:length(Smin_values)
+    Rmax_values(i) = ((Ppeak * G * eta * Ae) / (16 * %pi^2 * Smin_values(i)))^(1/4);
+end
+subplot(3,1,3);
+plot(Smin_values, Rmax_values, 'g');
+xlabel("S_{min}");
+ylabel("R_{max}");
+```
+## OUTPUT WAVEFORM
+
+<img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/f3435f99-a4af-472b-947d-f6bac357a051" />
+
+## CALCULATION
+
+
+
+## RESULT
+Thus, the maximum range of a radar system using the Radar Range Equation is verified
