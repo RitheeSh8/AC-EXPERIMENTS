@@ -50,7 +50,11 @@ plt.show()
 
 ## Tabulation
 
+![IMG-20251126-WA0022 1](https://github.com/user-attachments/assets/de774a0a-1a1a-4e9f-9095-6458e7eb3625)
 
+## Calculation
+
+![IMG-20251126-WA0023 1](https://github.com/user-attachments/assets/15d84820-81f0-47d4-b34e-a991c9294272)
 
 ## Result
 The message signal, carrier signal, and amplitude modulated (AM) signal will be displayed in separate plots. Thus AM is implemented using numPy and Matplotlib.
