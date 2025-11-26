@@ -47,11 +47,11 @@ plt.show()
 
 ## TABULAR COLOUMN
 
-
+![IMG-20251126-WA0024 1](https://github.com/user-attachments/assets/bc8c1db6-c598-48a3-b7b5-374a36496c16)
 
 ## CALCULATION
 
-
+![IMG-20251126-WA0025 1](https://github.com/user-attachments/assets/70e6d6ef-9ad6-4560-86f5-d1cb1ad24fdc)
 
 ## RESULT
 The message signal, carrier signal, and frequency modulated (FM) signal will be displayed in separate plots. The modulated signal will show frequency variations corresponding to the amplitude of the message signal.
