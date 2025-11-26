@@ -73,7 +73,7 @@ ylabel("R_{max}");
 
 ## CALCULATION
 
-
+![IMG-20251126-WA0026 1](https://github.com/user-attachments/assets/8068b06f-c183-48c9-9b31-7f1053da24f0)
 
 ## RESULT
 Thus, the maximum range of a radar system using the Radar Range Equation is verified
