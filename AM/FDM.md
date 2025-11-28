@@ -86,6 +86,9 @@ subplot(6,3,15); plot(t, r5);
 subplot(6,3,18); plot(t, r6);
 
 ```
+## OUTPUT
+
+<img width="2560" height="1368" alt="image" src="https://github.com/user-attachments/assets/404518be-390a-4c74-9d57-e5bdec84d31f" />
 
 ## TABULATION
 ![IMG-20251128-WA0011 1](https://github.com/user-attachments/assets/1f298da1-aac7-4c47-92e2-5a046a3f9c33)
