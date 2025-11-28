@@ -88,8 +88,9 @@ subplot(6,3,18); plot(t, r6);
 ```
 
 ## TABULATION
+![IMG-20251128-WA0011 1](https://github.com/user-attachments/assets/1f298da1-aac7-4c47-92e2-5a046a3f9c33)
 
-
+![IMG-20251128-WA0012 1](https://github.com/user-attachments/assets/7134a8d5-3d96-4d64-85db-8161fe6b37f2)
 
 ## RESULTS
 The program successfully simulates FDM and demultiplexing for multiple frequency signals with filtering to recover original signals accurately in Scilab.
